@@ -1,0 +1,38 @@
+apiVersion: skaffold/v1beta7
+kind: Config
+build:
+  artifacts:
+    - image: gcr.io/bookshelf-next-2019/bookshelf
+deploy:
+  kubectl:
+    manifests:
+      - k8s-manifests/dev/*
+      - k8s-manifests/config-map.yaml
+profiles:
+  - name: dev
+    build:
+      artifacts:
+        - image: gcr.io/bookshelf-next-2019/bookshelf
+          context: .
+          sync:
+            '**/*.js': .
+    deploy:
+      kubectl:
+        manifests:
+          - k8s-manifests/dev/*
+          - k8s-manifests/config-map.yaml
+  - name: qa
+    build:
+      artifacts:
+        - image: gcr.io/bookshelf-next-2019/bookshelf
+          context: .
+          sync:
+            '**/*.js': .
+      googleCloudBuild:
+        projectId: bookshelf-next-2019
+    deploy:
+      kubectl:
+        manifests:
+          - k8s-manifests/qa/*
+          - k8s-manifests/config-map.yaml
+    

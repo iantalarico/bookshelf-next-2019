@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cloudcode",
+            "language": "Node",
+            "request": "attach",
+            "debugPort": 9229,
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/app",
+            "name": "Attach Debug Frontend",
+            "podSelector": {
+                "app": "bookshelf-frontend"
+            }
+        }, 
+    ]
+}
