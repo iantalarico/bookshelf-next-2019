@@ -1,0 +1,9 @@
+{
+  "cloudcode.profile-cluster-map": {
+    "dev": "gke_kubecon-china-2019_asia-east1-a_bookshelf-dev",
+    "qa": "gke_kubecon-china-2019_asia-east1-a_bookshelf-qa"
+  },
+  "cloudcode.image-registry": {
+    "name": "gcr.io/kubecon-china-2019"
+  }
+}

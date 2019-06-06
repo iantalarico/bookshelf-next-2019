@@ -38,8 +38,8 @@ spec:
     spec:
       containers:
       - name: bookshelf-app
-        # Replace bookshelf-next-2019 with your project ID or use `make template`.
-        image: gcr.io/bookshelf-next-2019/bookshelf
+        # Replace kubecon-china-2019 with your project ID or use `make template`.
+        image: gcr.io/kubecon-china-2019/bookshelf
         # This setting makes nodes pull the docker image every time before
         # starting the pod. This is useful when debugging, but should be turned
         # off in production.

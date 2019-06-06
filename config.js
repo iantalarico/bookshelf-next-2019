@@ -47,7 +47,7 @@ nconf
   // 4. Defaults
   .defaults({
     // Typically you will create a bucket with the same name as your project ID.
-    CLOUD_BUCKET: 'bookshelf-next-2019',
+    CLOUD_BUCKET: 'kubecon-china-2019',
 
     // dataBackend can be 'datastore', 'cloudsql', or 'mongodb'. Be sure to
     // configure the appropriate settings for each storage engine below.
@@ -56,7 +56,7 @@ nconf
     DATA_BACKEND: 'datastore',
 
     // This is the id of your project in the Google Cloud Developers Console.
-    GCLOUD_PROJECT: 'bookshelf-next-2019',
+    GCLOUD_PROJECT: 'kubecon-china-2019',
 
     // Connection url for the Memcache instance used to store session data
     MEMCACHE_URL: 'localhost:11211',
@@ -69,9 +69,9 @@ nconf
     MYSQL_USER: '',
     MYSQL_PASSWORD: '',
 
-    OAUTH2_CLIENT_ID: '',
-    OAUTH2_CLIENT_SECRET: '',
-    OAUTH2_CALLBACK: '',
+    OAUTH2_CLIENT_ID: 'na',
+    OAUTH2_CLIENT_SECRET: 'na',
+    OAUTH2_CALLBACK: 'na',
 
     PORT: 8080,
 

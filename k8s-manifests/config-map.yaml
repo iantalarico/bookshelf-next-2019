@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: config-folder
 data:
-  PROJECT_ID: bookshelf-next-2019
+  PROJECT_ID: kubecon-china-2019

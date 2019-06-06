@@ -6,7 +6,7 @@ This is a slightly modified version of the [Deploy Bookshelf to Google Kubernete
 
 This code was for demo purposes only and may not be the best example of well written software:
 
-- In many places a GCP project id is hard coded (bookshelf-next-2019)
+- In many places a GCP project id is hard coded (kubecon-china-2019)
 - Error handling is lacking
 - The OAuth flow is not set up
 - Unused files and code is not cleaned up.
