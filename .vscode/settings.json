@@ -5,5 +5,9 @@
   },
   "cloudcode.image-registry": {
     "name": "gcr.io/kubecon-china-2019"
+  },
+  "cloudcode.profile-registry-map": {
+    "dev": "gcr.io/kubecon-china-2019",
+    "qa": "gcr.io/kubecon-china-2019"
   }
 }
