@@ -13,9 +13,6 @@ profiles:
     build:
       artifacts:
         - image: gcr.io/kubecon-china-2019/bookshelf
-          context: .
-          sync:
-            '**/*.js': .
     deploy:
       kubectl:
         manifests:
@@ -25,9 +22,6 @@ profiles:
     build:
       artifacts:
         - image: gcr.io/kubecon-china-2019/bookshelf
-          context: .
-          sync:
-            '**/*.js': .
       googleCloudBuild:
         projectId: kubecon-china-2019
     deploy:
